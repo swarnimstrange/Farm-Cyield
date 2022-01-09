@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Farm-Cyield</title>
+<style>
+
+.columns {
+Width: 100%;
+}
+.column {
+  width:100%;
+  height: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+#crop_yield:hover .overlay {
+  opacity: 0.9;
+}
+
+.overlaye {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+#crop_pred:hover .overlaye {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#crop_yield{
+  background-image: url("https://www.investopedia.com/thmb/af2_szAGyG2cxHvdXISlmhi2Rg4=/3100x2067/filters:fill(auto,1)/harvest-164458970-505d26b04f134939a829746343346ec8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#crop_pred{
+  background-image: url("https://media.nationalgeographic.org/assets/photos/120/983/091a0e2f-b93d-481b-9a60-db520c87ec33.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 48em) {
+  .column {
+    width: 50%;
+    float:left;
+    height: 100%;
+  }
+  .columns {
+    content: "";
+    clear: both;
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+#crop_yield:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlaye {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+#crop_pred:hover .overlaye {
+  opacity: 0.9;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+  <div class="columns">
+    <a href="{{ url_for('crop_pred') }}">
+      <div class="column" id="crop_yield">
+          <div class="overlay">
+            <div class="text">Crop Yield Prediction</div>
+          </div>
+      </div>
+    </a>
+    <a href="{{ url_for('crop_recommend') }}">
+      <div class="column" id="crop_pred">
+        <div class="overlaye">
+          <div class="text">Crop Reccomendation</div>
+        </div>
+      </div></a>
+ </div>
+</body>
+</html>
