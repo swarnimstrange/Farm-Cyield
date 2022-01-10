@@ -22,8 +22,11 @@
 
 ## Images
 
-<img src="https://i.ibb.co/bmfj1NR/Screenshot-354.png" width = "300" />
-
+<img src="https://i.ibb.co/bmfj1NR/Screenshot-354.png" width = "500" />
+<img src="https://i.ibb.co/2Y4sydb/Screenshot-355.png" width = "500" />
+<img src="https://i.ibb.co/R4QxTw1/Screenshot-356.png" width = "500" />
+<img src="https://i.ibb.co/DkDMLzs/Screenshot-357.png" width = "500" />
+<img src="https://i.ibb.co/4mD9ZL3/Screenshot-358.png" width = "500" />
 
 ## License
 This project is licensed under [MIT License](https://github.com/swarnimstrange/Farm-Cyield/blob/main/LICENSE).
