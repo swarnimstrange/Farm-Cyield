@@ -18,7 +18,7 @@
 ## DEPLOYMENT💼
 
 #### Deployed using Heruko
-#### The Web Application [Farm-Cyield Website](https://farm-cyield.herokuapp.com/)
+## The Web Application [Farm-Cyield Website](https://farm-cyield.herokuapp.com/)
 
 ## Images🎨🖼
 
