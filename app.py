@@ -8,9 +8,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-import joblib
-model = joblib.load('score.pkl')
-
 app = Flask(__name__)
 
 def weather_fetch(city_name):
@@ -139,4 +136,5 @@ def crop_yield():
 if __name__ == "__main__":
 
     app.run(debug=True)
+
 
