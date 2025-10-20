@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 import joblib
-joblib.dump(model, 'score.pkl')
+model = joblib.load('score.pkl')
 
 app = Flask(__name__)
 
@@ -139,3 +139,4 @@ def crop_yield():
 if __name__ == "__main__":
 
     app.run(debug=True)
+
