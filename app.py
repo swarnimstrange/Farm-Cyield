@@ -133,8 +133,8 @@ def crop_yield():
     return render_template('try_again.html')
 
 
-if __name__ == "__main__":
-
+if __name__ == '__main__':
     app.run(debug=True)
+
 
 
